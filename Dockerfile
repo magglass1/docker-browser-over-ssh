@@ -21,8 +21,10 @@ RUN wget -q https://dl-ssl.google.com/linux/linux_signing_key.pub
 RUN rpm --import linux_signing_key.pub
 RUN rm linux_signing_key.pub
 
+# Install Firefox, Chrome, SSHD, and other required packages
 RUN yum install firefox flash-plugin google-chrome-stable openssh-server xorg-x11-xauth pwgen -y
 
+# Initialize SSHD and create the webuser user
 RUN sshd-keygen
 RUN useradd webuser
 
