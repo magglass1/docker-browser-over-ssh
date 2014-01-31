@@ -2,7 +2,7 @@
 #
 # VERSION               0.1
 # Supports Firefox, Google Chrome, and Flash
-# Run with: docker run -rm -t -i browser-over-ssh
+# Run with: docker run -rm -t -i magglass1/docker-browser-over-ssh
 
 FROM fedora
 
